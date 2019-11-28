@@ -19,6 +19,7 @@ int main(int argc, char **argv){
 	size_t nb_columns = 3;
 	char **tableau1=creer_tableau(nb_codons1,nb_columns);
 	tableau1= recup_codons(tableau1, seq1, nb_codons1, nb_columns);
+	test(tableau1, nb_codons1, nb_columns);
 	char **tableau2=creer_tableau(nb_codons2,nb_columns);
 	tableau2= recup_codons(tableau2, seq2, nb_codons2, nb_columns);
 	affiche_tableau(tableau1,nb_codons1,nb_columns);
